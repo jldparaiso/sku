@@ -1,0 +1,65 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.megamenu-li {
+	position: static;
+}
+
+.megamenu {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 15px;
+}
+
+.logo{
+	height: 80px;
+}
+
+.login{
+	font-size: 12px;
+	font-weight: bold;
+	border: 2px solid;
+}
+
+.navbar{
+	background-color: transparent;
+}
+
+.nav-link{
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+#list {
+	font-weight: bolder;
+	font-size: 14px;
+	padding: 16px;
+}
+
+
+.jumbotron{
+	background-color: transparent;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#btn-lg{
+	color: white;
+	padding: 16px;
+	padding-left: 24px;
+	padding-right: 24px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.lead{
+	font-weight: bolder;
+}
+
+#specialize{
+	font-weight: bolder;
+	font-size: 14px;	
+}
+
