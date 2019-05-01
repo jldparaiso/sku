@@ -2,20 +2,9 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.megamenu-li {
-	position: static;
-}
-
-.megamenu {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	right: 0;
-	padding: 15px;
-}
 
 .logo{
-	height: 80px;
+	height: 60px;
 }
 
 .login{
@@ -39,6 +28,14 @@ body {
 	padding: 16px;
 }
 
+#homebanner,
+#home-text {
+	font-weight: bolder;
+}
+
+#hero-img{
+	height: 90vh;
+}
 
 .jumbotron{
 	background-color: transparent;
@@ -54,7 +51,10 @@ body {
 	font-weight: bolder;
 }
 
-.lead{
+.lead, 
+.footer-nav,
+.expertise,
+.address {
 	font-weight: bolder;
 }
 
@@ -63,3 +63,44 @@ body {
 	font-size: 14px;	
 }
 
+#imgserv{
+	height: 150px;
+	width: 180px;
+}
+
+.carousel {
+  margin: 1.5rem;
+}
+.carousel-inner {
+  height: auto;
+}
+
+.carousel-control-prev {
+  margin-left: -100px;
+}
+
+.carousel-control-next {
+  margin-right: -100px;
+}
+
+#page-footer{
+	height: 100vh;
+	background-color: black;
+}
+
+#footer-logo{
+	height: 60px;
+	filter: invert(100%);
+}
+
+hr{
+	border-color: grey;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
