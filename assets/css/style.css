@@ -29,11 +29,14 @@ body {
 }
 
 #homebanner,
-#home-text {
+#home-text,
+#small-home-banner {
 	font-weight: bolder;
 }
 
-#hero-img{
+
+
+.hero-img{
 	height: 90vh;
 }
 
@@ -42,7 +45,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#btn-lg{
+.customBtn{
 	color: white;
 	padding: 16px;
 	padding-left: 24px;
@@ -64,23 +67,55 @@ body {
 }
 
 #imgserv{
-	height: 150px;
-	width: 180px;
+	height: 200px;
+	width: 200px;
 }
+
 
 .carousel {
   margin: 1.5rem;
 }
+
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 2px solid orange; 
+}
+.carousel-indicators {
+    bottom: -50px;
+
+}
+
+.carousel-indicators .active{
+    background-color: orange;
+}
+
 .carousel-inner {
   height: auto;
 }
 
 .carousel-control-prev {
+  margin-top: 160px;
   margin-left: -100px;
 }
 
 .carousel-control-next {
+  margin-top: 160px;
   margin-right: -100px;
+}
+
+#carousel-logo{
+	height: 60px;
+}
+
+#carousel-card{
+	height: 350px;
+}
+
+#quote{
+	height: 40px;
 }
 
 #page-footer{
@@ -104,3 +139,116 @@ a{
 ul{
 	list-style-type: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* mobile*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+	.logo{
+	height: 35px;
+	}
+
+	#hero-img {
+	height: 50vh;
+	}
+
+	#homebanner,
+	#home-text {
+	font-size: 1.8em;
+	}
+
+	#subhead,
+	.lead{
+	font-size: 1em;
+	}
+
+	#footer-logo{
+	height: 35px;
+	filter: invert(100%);
+	}
+
+	.blockquote{
+	font-size: .8em;
+	}
+
+	#social-media {
+	font-size: 1em;
+	}
+
+	small{
+	font-size: .6em;
+	}
+
+	.copyright{
+	font-size: .5em;
+	}
+
+	#footer-nav,
+	.expertise,
+	.address {
+	font-size: .65em;
+	}
+	
+}
+
+/*tablet*/
+
+@media only screen 
+and (min-width: 481px) 
+and (max-width: 960px)
+{
+
+	#homebanner,
+	#home-text {
+		font-size: 3em;
+	}
+
+	#hero-img{
+		height: 36vh;
+	}
+
+	#quote{
+	height: 20px;
+	}
+
+	#carousel-logo{
+	height: 40px;
+	}
+
+}
+
+/*iPadPro*/
+@media only screen 
+and (min-width: 1024px) 
+and (max-width: 1366px)
+{
+
+	#list {
+		font-size: .75em;
+	}
+
+	#quote{
+	height: 20px;
+	}
+
+	#carousel-logo{
+	height: 40px;
+	}
+
+	#homebanner,
+	#home-text {
+		font-size: 2.7em;
+	}
+}
+
