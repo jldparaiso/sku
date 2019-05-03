@@ -1,4 +1,13 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
 body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,6 +24,21 @@ body {
 
 .navbar{
 	background-color: transparent;
+}
+
+/* Style the links inside the navigation bar */
+.navbar .nav-link {
+  display: block;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar .nav-link:hover {
+  border-bottom: 3px solid orange;
+}
+
+.navbar .nav-link.active {
+  border-bottom: 3px solid orange;
 }
 
 .nav-link{
@@ -119,8 +143,12 @@ body {
 }
 
 #page-footer{
-	height: 100vh;
+	/*height: 100vh;*/
 	background-color: black;
+	position: absolute;
+	right: 0;
+	left:0;
+
 }
 
 #footer-logo{
@@ -141,7 +169,55 @@ ul{
 }
 
 
+/*how it works sheet =====================================================================*/
 
+.container-fluid{
+	height: 30vh;
+}
+
+#howItWorksNav{
+	background-color: transparent;
+	overflow: hidden;	
+}
+
+#howItWorksNav .nav-link{
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: white !important;
+  transition: background-color 200ms linear;
+  transition: color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color: black !important;
+}
+
+
+#h-jumbotron{
+	height: 50vh;
+	position: absolute;
+  	right: 0;
+  	left: 0;
+  	z-index: -1;
+  	background-image: linear-gradient(#1e4867, #295c82);
+}
+
+#how-it-works-jumbotron{
+	z-index: 1;
+	height: 20vh;
+	margin-top: 500px;
+}
+
+#howto-sub-banner{
+	font-weight: normal;
+}
+
+
+
+/*=====================================================================*/
 
 
 
@@ -165,11 +241,11 @@ and (max-device-width : 480px) {
 
 	#homebanner,
 	#home-text {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	}
 
 	#subhead,
-	.lead{
+	.lead {
 	font-size: 1em;
 	}
 
@@ -178,7 +254,8 @@ and (max-device-width : 480px) {
 	filter: invert(100%);
 	}
 
-	.blockquote{
+	.blockquote,
+	#sm-subhead {
 	font-size: .8em;
 	}
 
@@ -199,8 +276,15 @@ and (max-device-width : 480px) {
 	.address {
 	font-size: .65em;
 	}
+
+	#small-home-banner{
+	font-size: 1.4em;
+	}
 	
 }
+
+
+
 
 /*tablet*/
 
@@ -214,10 +298,7 @@ and (max-width: 960px)
 		font-size: 3em;
 	}
 
-	#hero-img{
-		height: 36vh;
-	}
-
+	
 	#quote{
 	height: 20px;
 	}
