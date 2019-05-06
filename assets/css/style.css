@@ -177,7 +177,9 @@ ul{
 
 #howItWorksNav{
 	background-color: transparent;
-	overflow: hidden;	
+	position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #howItWorksNav .nav-link{
@@ -187,8 +189,8 @@ ul{
 
 .navbar-fixed-top.scrolled {
   background-color: white !important;
-  transition: background-color 200ms linear;
-  transition: color 200ms linear;
+  transition: background-color 300ms linear;
+  transition: color 300ms linear;
 }
 
 .navbar-fixed-top.scrolled .nav-link {
@@ -201,19 +203,32 @@ ul{
 	position: absolute;
   	right: 0;
   	left: 0;
+  	bottom: 50vh;
   	z-index: -1;
   	background-image: linear-gradient(#1e4867, #295c82);
 }
 
-#how-it-works-jumbotron{
-	z-index: 1;
-	height: 20vh;
+#how-it-works-container{
 	margin-top: 500px;
+}
+
+.man
+{	
+	height: 250px;
+}
+
+.man-group{
+	height: 350px;
 }
 
 #howto-sub-banner{
 	font-weight: normal;
 }
+
+.faq{
+	font-weight: bolder;
+}
+
 
 
 
@@ -227,6 +242,8 @@ ul{
 
 
 /* mobile*/
+
+/*homepage*/
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
@@ -280,8 +297,48 @@ and (max-device-width : 480px) {
 	#small-home-banner{
 	font-size: 1.4em;
 	}
+
+/*how it works page*/
+
+	#how-it-works-banner{
+		margin-top: 10px;
+		font-weight: bolder;
+		font-size: 1.5em;
+		}
+
+	#howto-sub-banner{
+		font-size: .8em;
+	/*	margin-bottom: 300px;*/
+		position: relative;
+		top: 0;
+	}
+
+	#h-jumbotron{
+		height: 60vh;
+		position: absolute;
+	  	right: 0;
+	  	left: 0;
+	  	top: 0;	
+		}
+
+	.man, .man-group
+	{	
+		height: 150px;
+	}
+
+	.how-it{
+		font-size: 0.7em;
+	}
 	
+	.accord-head{
+		font-size: 1em;
+	}
 }
+
+
+
+
+
 
 
 
@@ -290,7 +347,7 @@ and (max-device-width : 480px) {
 
 @media only screen 
 and (min-width: 481px) 
-and (max-width: 960px)
+and (max-width: 1024px)
 {
 
 	#homebanner,
@@ -306,6 +363,8 @@ and (max-width: 960px)
 	#carousel-logo{
 	height: 40px;
 	}
+
+	
 
 }
 
@@ -331,5 +390,13 @@ and (max-width: 1366px)
 	#home-text {
 		font-size: 2.7em;
 	}
+
+	#h-jumbotron{
+		height: 36vh;
+		position: absolute;
+	  	right: 0;
+	  	left: 0;
+	  	top: 0;	
+		}
 }
 
